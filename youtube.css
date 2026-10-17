@@ -4,7 +4,7 @@
 }
 
 .search-bar{
-  
+  display: block;
 }
 
 .video-title{
@@ -14,4 +14,12 @@
 .author, 
 .stats{
 
+}
+
+
+.preview{
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
 }
