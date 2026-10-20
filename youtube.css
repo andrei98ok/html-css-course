@@ -7,9 +7,6 @@
   display: block;
 }
 
-.video-title{
-  width: 300px;
-}
 
 .author, 
 .stats{
@@ -23,3 +20,18 @@
   vertical-align: top;
   margin-right: 15px;
 }
+
+.channel-picture{
+  display: inline-block;
+  width: 50px;
+}
+
+.profile-picture{
+  width: 100%;
+}
+
+.video-info{
+  display: inline-block;
+  width: 200px;
+}
+
