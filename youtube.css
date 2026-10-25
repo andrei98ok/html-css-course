@@ -12,41 +12,19 @@ p{
   display: block;
 }
 
+.video-title{
+  width: 300px;
+}
+
+.author, 
+.stats{
+
+}
+
+
 .preview{
   width: 300px;
   display: inline-block;
   vertical-align: top;
   margin-right: 15px;
-}
-
-.thumbnail-row{
-  margin-bottom: 12px;
-}
-.channel-picture{
-  display: inline-block;
-  width: 50px;
-  vertical-align: top;
-}
-.profile-picture{
-  width: 40px;
-  border-radius: 25px;
-}
-.video-info{
-  display: inline-block;
-  width: 200px;
-}
-.video-title{
-  margin-top: 0;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 20px;
-  margin-bottom: 12px;
-}
-.author, 
-.stats{
-  font-size: 12px;
-  color: grey;
-}
-.author{
-  margin-bottom: 4px;
 }
