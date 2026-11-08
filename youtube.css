@@ -3,10 +3,14 @@
         margin-top: 0;
         margin-bottom: 0;
       }
-
+      .video-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 15px;
+        row-gap: 40px;
+      }
       .thumbnail {
-        width: 300px;
-        display: block;
+        width: 100%;
       }
 
       .search-bar {
@@ -21,22 +25,17 @@
         margin-bottom: 12px;
       }
 
-      .video-preview {
-        width: 300px;
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 15px;
+      .video-info-grid{
+        display: grid;
+        grid-template-columns: 50px 1fr;
       }
-
       .channel-picture {
-        display: inline-block;
         width: 50px;
         vertical-align: top;
       }
 
       .video-info {
-        display: inline-block;
-        width: 200px;
+
       }
 
       .profile-picture {
