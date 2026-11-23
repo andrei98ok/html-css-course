@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 
 .left-section{
@@ -14,6 +15,9 @@
 .middle-section{
   background-color: lightpink;
   flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
 }
 
 .right-section{
