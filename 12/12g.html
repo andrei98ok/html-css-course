@@ -3,10 +3,85 @@
   <head>
     <title>12g</title>
     <style>
+          p {
+        font-family: Arial;
+        margin-top: 0;
+        margin-bottom: 0;
+        }
+      .profile{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 20px;
 
+      }
+        .info {
+          width: 200px;
+        }
+      .profile-picture {
+          height: 50px;
+          width: 50px;
+          object-fit: cover;
+          border-radius: 25px;
+          margin-right: 15px;
+        }
+        .name {
+          font-weight: bold;
+          margin-bottom: 3px;
+        }
+          .handle {
+            color: rgb(150, 150, 150);
+            margin-bottom: 5px;
+          }
+
+          .category {
+            color: rgb(150, 150, 150);
+            font-size: 14px;
+          }
+      .follow {
+        background-color: rgb(29, 155, 240);
+        color: white;
+        border: none;
+        font-size: 16px;
+        font-weight: bold;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
-
+    <div class="container">
+      <div class="profile">
+        <img class="profile-picture" src="/imgs/cat.jpg" alt="">
+          <div class="info">
+            <p class="name">Oliver</p>
+            <p class="handle">the cat</p>
+            <p class="category">Popular</p>
+          </div>
+          <button class="follow">Follow</button>
+      </div>
+      <div class="profile">
+        <img class="profile-picture" src="/imgs/cat2.jpg" alt="">
+          <div class="info">
+            <p class="name">Mimi</p>
+            <p class="handle">Sleepy Cat</p>
+            <p class="category">Popular</p>
+          </div>
+          <button class="follow">Follow</button>
+      </div>
+      <div class="profile">
+        <img class="profile-picture" src="/imgs/dog.jpg" alt="">
+          <div class="info">
+            <p class="name">Rex</p>
+            <p class="handle">Happy Bulldog</p>
+            <p class="category">Popular</p>
+          </div>
+          <button class="follow">Follow</button>
+      </div>
+    </div>
   </body>
 </html>
