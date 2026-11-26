@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13 - Nested Layouts</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 4px 8px;
+        font-family: Arial, sans-serif;
+        color: #111;
+      }
+
+      .email-card {
+        width: min(100%, 450px);
+        min-height: 150px;
+        padding: 10px 16px 20px;
+        border-radius: 6px;
+        background-color: white;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+      }
+
+      .inbox-label {
+        margin: 0;
+        color: #858585;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+      }
+
+      .email {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      .sender-picture {
+        flex: 0 0 52px;
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .email-content {
+        flex: 1;
+        min-width: 0;
+      }
+
+      .email-heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 4px;
+      }
+
+      .sender,
+      .time,
+      .subject,
+      .preview {
+        margin: 0;
+      }
+
+      .sender {
+        overflow: hidden;
+        font-size: 18px;
+        font-weight: 700;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .time {
+        flex-shrink: 0;
+        color: #858585;
+        font-size: 16px;
+      }
+
+      .subject,
+      .preview {
+        overflow: hidden;
+        font-size: 16px;
+        line-height: 22px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .subject {
+        font-weight: 700;
+      }
+
+      .preview {
+        color: #858585;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="email-card">
+      <p class="inbox-label">ALL INBOXES</p>
+      <article class="email">
+        <img class="sender-picture" src="../imgs/cat.jpg" alt="Chewy Promotions profile">
+        <div class="email-content">
+          <div class="email-heading">
+            <p class="sender">Chewy Promotions</p>
+            <p class="time">4:58 PM</p>
+          </div>
+          <p class="subject">Biggest sales of the year!</p>
+          <p class="preview">Hey there! We're writing to tell you about our...</p>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

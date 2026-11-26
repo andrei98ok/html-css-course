@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Примеры кнопок</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        padding: 48px 24px;
+        display: grid;
+        place-items: center;
+        background-color: #f5f7fb;
+        color: #172033;
+        font-family: Arial, sans-serif;
+      }
+
+      main {
+        width: min(100%, 720px);
+        padding: 40px;
+        border: 1px solid #e5e9f2;
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 0 16px 40px rgba(23, 32, 51, 0.08);
+      }
+
+      h1 {
+        margin: 0 0 10px;
+        font-size: 30px;
+      }
+
+      .intro {
+        margin: 0 0 32px;
+        color: #65708a;
+        line-height: 1.5;
+      }
+
+      .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+      }
+
+      button {
+        min-height: 46px;
+        padding: 0 20px;
+        border: 0;
+        border-radius: 9px;
+        font-size: 15px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: transform 150ms ease, background-color 150ms ease,
+          box-shadow 150ms ease, color 150ms ease;
+      }
+
+      button:hover {
+        transform: translateY(-2px);
+      }
+
+      button:active {
+        transform: translateY(0);
+      }
+
+      button:focus-visible {
+        outline: 3px solid #172033;
+        outline-offset: 3px;
+      }
+
+      .subscribe {
+        background-color: #cc0000;
+        color: white;
+      }
+
+      .subscribe:hover {
+        background-color: #a90000;
+        box-shadow: 0 5px 14px rgba(204, 0, 0, 0.2);
+      }
+
+      .join {
+        border: 1px solid #0969da;
+        background-color: white;
+        color: #0969da;
+      }
+
+      .join:hover {
+        background-color: #0969da;
+        color: white;
+      }
+
+      .message {
+        border-radius: 24px;
+        background-color: #1597e5;
+        color: white;
+      }
+
+      .message:hover {
+        background-color: #087fc7;
+        box-shadow: 0 5px 14px rgba(21, 151, 229, 0.22);
+      }
+
+      .more {
+        background-color: #eef1f6;
+        color: #34405a;
+      }
+
+      .more:hover {
+        background-color: #dfe4ed;
+      }
+
+      @media (max-width: 520px) {
+        body {
+          padding: 24px 16px;
+        }
+
+        main {
+          padding: 28px 22px;
+        }
+
+        h1 {
+          font-size: 26px;
+        }
+
+        .buttons {
+          flex-direction: column;
+        }
+
+        button {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Примеры кнопок</h1>
+      <p class="intro">Наведите курсор или нажмите на кнопку, чтобы увидеть эффект.</p>
+      <div class="buttons">
+        <button class="subscribe" type="button">Подписаться</button>
+        <button class="join" type="button">Присоединиться</button>
+        <button class="message" type="button">Написать</button>
+        <button class="more" type="button">Подробнее</button>
+      </div>
+    </main>
+  </body>
+</html>
